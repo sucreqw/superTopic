@@ -1,0 +1,44 @@
+关于微博超级话题的研究
+
+1，每日签到接口
+
+POST https://huati.weibo.cn/aj/super/receivescore HTTP/1.1
+Host: huati.weibo.cn
+Connection: keep-alive
+Content-Length: 25
+Accept: application/json, text/plain, */*
+Origin: https://huati.weibo.cn
+X-Requested-With: XMLHttpRequest
+x-wap-profile: http://wap1.huawei.com/uaprof/HONOR_Che2-TL00_UAProfile.xml
+User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; Che2-TL00 Build/HonorChe2-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 Weibo (HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2)
+Content-Type: application/x-www-form-urlencoded
+Referer: https://huati.weibo.cn/super/taskcenter?ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&from=1086395010
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _T_WM=1da4b2ec25582d267b2402023b6fbe83; WEIBOCN_FROM=1086395010; MLOGIN=1; HUATI-PHP7-YF=61d3bba74e41ada4696f785c0ad9b284; HUATI-PHP54=5ce4f91a9d67aef46969cf79eb1b49bd; SUB=_2A252w25eDeRhGeVG7lAR-SbEwzuIHXVVnxwWrDV6PUJbitANLVD9kWtNT7A9DTCRdFfqjn98PyQ8bYizsKDpED90; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhVq34IR_JPxuJfHAxADhkV5NHD95Q01h-Eeh.R1hnNWs4Dqcj6i--Xi-zRiKn7i--ci-zEiKn4i--NiK.4i-i8i--Ri-zRi-24i--Xi-i2iK.fi--ciK.Ni-2fi--Ri-isiK.R; SCF=AtKXTXY4LGVNBoz5QYll97Qc2tHq5DzoQzRaylSyp8EOKv0pszB8-LdEHEW7O6RW3w..; SUHB=0h15dKSX2zhcgx; HUATI_CODE_FROM=1086395010
+
+type=REQUEST&user_score=0
+
+2，关注接口：
+GET https://api.weibo.cn/2/friendships_pages/create?networktype=wifi&extparam=tabbar_follow%234296204685089364&cardid=1008080013_0&able_recommend=0&uicode=10000011&moduleID=700&wb_version=3654&c=android&i=f842b7a&s=dddddddd&ft=0&id=1022%3A10080817c0fee819b9c79696a382f9634dbd87&ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&wm=9006_2001&aid=01Anlv2XwdpcqURzkYptXmiLgF3XZdgmTqaHowQEvwWF5xAFc.&fid=10080817c0fee819b9c79696a382f9634dbd87&v_f=2&v_p=62&from=1086395010&gsid=_2A252w25eDeRxGeVG7lAR-SbEwzuIHXVT2eaWrDV6PUJbkdAKLUXckWpNT7A9DU50PhpahnoX6h4MN6IDf091FFC2&lang=zh_CN&lfid=100803_-_recentvisit&skin=default&oldwm=9006_2001&sflag=1&cum=AFE0892D HTTP/1.1
+Host: api.weibo.cn
+Connection: keep-alive
+X-Sessionid: 4a7f855c-2177-4edf-8932-9f24f7ab044b
+X-Validator: qJAP41mNoIR0BCOfORW1xUqpRwIp4ZzBpuAEdfnXwl8=
+X-Log-Uid: 3852098887
+User-Agent: Che2-TL00_4.4.2_weibo_8.6.3_android
+
+
+
+3，签到接口（后面还有两个，怀疑也是，后面确定）
+
+GET https://api.weibo.cn/2/page/button?request_url=http%3A%2F%2Fi.huati.weibo.com%2Fmobile%2Fsuper%2Factive_checkin%3Fpageid%3D10080817c0fee819b9c79696a382f9634dbd87&networktype=wifi&extparam=tabbar_follow%234296204685089364&accuracy_level=0&uicode=10000011&moduleID=700&wb_version=3654&c=android&i=f842b7a&s=dddddddd&ft=0&ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&wm=9006_2001&aid=01Anlv2XwdpcqURzkYptXmiLgF3XZdgmTqaHowQEvwWF5xAFc.&fid=10080817c0fee819b9c79696a382f9634dbd87&v_f=2&v_p=62&from=1086395010&gsid=_2A252w25eDeRxGeVG7lAR-SbEwzuIHXVT2eaWrDV6PUJbkdAKLUXckWpNT7A9DU50PhpahnoX6h4MN6IDf091FFC2&lang=zh_CN&lfid=100803_-_recentvisit&skin=default&oldwm=9006_2001&sflag=1&cum=E0214B2C HTTP/1.1
+Host: api.weibo.cn
+Connection: keep-alive
+X-Sessionid: 254d6771-e273-4459-a1f6-16ded81e4c68
+X-Validator: dCVMGLasu0eSgtHMYLonQCrDupmj9d5RNY1sosXJWc8=
+X-Log-Uid: 3852098887
+User-Agent: Che2-TL00_4.4.2_weibo_8.6.3_android
+Accept-Encoding: gzip, deflate
+
+
+
