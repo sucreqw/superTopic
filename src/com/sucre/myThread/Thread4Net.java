@@ -12,7 +12,7 @@ import com.sucre.mainUtil.MyUtil;
  * @author sucre..
  *
  */
-abstract public class Thread4Net implements Runnable {
+abstract public class Thread4Net implements Runnable { 
 	// 抽象方法,要求子类必须覆盖.
 	abstract public int doWork(int index);
 

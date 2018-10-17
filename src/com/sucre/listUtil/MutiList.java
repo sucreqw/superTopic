@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 作为账号,密码,或者其它cookie,vid 存储之用的列表类 
  */
-public class MutiList extends ArrayList<String> {
+public class MutiList extends ArrayList<String>  {
 	private ArrayList<String> myList = null;
     private int size=0;
 	//private final Lock lock=new ReentrantLock();

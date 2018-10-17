@@ -1,6 +1,6 @@
 package com.sucre.mainUtil;
 
-public interface Info {
+public interface Info { 
 	void setADSL(String adslID);
 	void setADSLName(String adslName);
 	void setADSLPass(String adslPass);

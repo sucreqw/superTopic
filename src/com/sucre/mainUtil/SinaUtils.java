@@ -6,7 +6,7 @@ public class SinaUtils {
 	 * @param uid
 	 * @return
 	 */
-	public static String CaculateS(String uid) {
+	public static String CaculateS(String uid) { 
 		String md5=MyUtil.MD5(uid+"5l0WXnhiY4pJ794KIJ7Rw5F45VXg9sjo");
 		//System.out.println(md5);
 		String temp=md5.substring(1, 2);

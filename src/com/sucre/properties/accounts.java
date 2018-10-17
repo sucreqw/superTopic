@@ -11,7 +11,7 @@ public class accounts implements Info{
 		
 	}
 	@Override
-	public void setADSL(String adslID) {
+	public void setADSL(String adslID) { 
 		ADSL=adslID;
 		
 	}

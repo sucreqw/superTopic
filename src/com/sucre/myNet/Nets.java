@@ -21,7 +21,7 @@ import javax.net.ssl.SSLSocketFactory;
  * @author sucre
  *
  */
-public class Nets {
+public class Nets { 
 
 	/**
 	 * https数据包发�?.get/post通用.

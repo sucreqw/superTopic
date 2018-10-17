@@ -29,7 +29,7 @@ import com.sucre.listUtil.MutiList;
  * @author sucre
  *
  */
-public class MyUtil {
+public class MyUtil { 
 	// 定义各种List
 	public static MutiList listId = new MutiList();
 	public static MutiList listVid = new MutiList();
