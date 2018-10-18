@@ -482,4 +482,13 @@ public class MyUtil {
     public static String trimNull(String data) {
     	return data==null?"":data;
 	}
+    
+    /**
+     * 打印字符到窗体或控制台
+     * @param data
+     */
+    public static void print(String data,Printer printer) {
+    	if(printer!=null) {printer.print(data);}
+    	System.out.println(data);
+    }
 }
