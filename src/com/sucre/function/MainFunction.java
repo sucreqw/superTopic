@@ -39,8 +39,9 @@ public class MainFunction extends Thread4Net {
 
 			ret = nets.goPost("api.weibo.cn", 443, follow(midCookie(cookie), uid, vid));
 
-			MyUtil.print("正在签到话题.."  + i + "<>" + index, null);
+			
 			ret = nets.goPost("api.weibo.cn", 443, checkin(midCookie(cookie), uid, vid));
+			MyUtil.print("正在签到话题.."  + i + "<>" + index, null);
 		}
 		return index;
 	}
