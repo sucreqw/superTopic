@@ -1,6 +1,6 @@
-¹ØÓÚÎ¢²©³¬¼¶»°ÌâµÄÑÐ¾¿
+ï¿½ï¿½ï¿½ï¿½Î¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½
 
-1£¬Ã¿ÈÕÇ©µ½½Ó¿Ú
+1ï¿½ï¿½Ã¿ï¿½ï¿½Ç©ï¿½ï¿½ï¿½Ó¿ï¿½
 
 POST https://huati.weibo.cn/aj/super/receivescore HTTP/1.1
 Host: huati.weibo.cn
@@ -18,7 +18,7 @@ Cookie: _T_WM=1da4b2ec25582d267b2402023b6fbe83; WEIBOCN_FROM=1086395010; MLOGIN=
 
 type=REQUEST&user_score=0
 
-2£¬¹Ø×¢½Ó¿Ú£º
+2ï¿½ï¿½ï¿½ï¿½×¢ï¿½Ó¿Ú£ï¿½
 GET https://api.weibo.cn/2/friendships_pages/create?networktype=wifi&extparam=tabbar_follow%234296204685089364&cardid=1008080013_0&able_recommend=0&uicode=10000011&moduleID=700&wb_version=3654&c=android&i=f842b7a&s=dddddddd&ft=0&id=1022%3A10080817c0fee819b9c79696a382f9634dbd87&ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&wm=9006_2001&aid=01Anlv2XwdpcqURzkYptXmiLgF3XZdgmTqaHowQEvwWF5xAFc.&fid=10080817c0fee819b9c79696a382f9634dbd87&v_f=2&v_p=62&from=1086395010&gsid=_2A252w25eDeRxGeVG7lAR-SbEwzuIHXVT2eaWrDV6PUJbkdAKLUXckWpNT7A9DU50PhpahnoX6h4MN6IDf091FFC2&lang=zh_CN&lfid=100803_-_recentvisit&skin=default&oldwm=9006_2001&sflag=1&cum=AFE0892D HTTP/1.1
 Host: api.weibo.cn
 Connection: keep-alive
@@ -29,7 +29,7 @@ User-Agent: Che2-TL00_4.4.2_weibo_8.6.3_android
 
 
 
-3£¬Ç©µ½½Ó¿Ú£¨ºóÃæ»¹ÓÐÁ½¸ö£¬»³ÒÉÒ²ÊÇ£¬ºóÃæÈ·¶¨£©
+3ï¿½ï¿½Ç©ï¿½ï¿½ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½æ»¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½
 
 GET https://api.weibo.cn/2/page/button?request_url=http%3A%2F%2Fi.huati.weibo.com%2Fmobile%2Fsuper%2Factive_checkin%3Fpageid%3D10080817c0fee819b9c79696a382f9634dbd87&networktype=wifi&extparam=tabbar_follow%234296204685089364&accuracy_level=0&uicode=10000011&moduleID=700&wb_version=3654&c=android&i=f842b7a&s=dddddddd&ft=0&ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&wm=9006_2001&aid=01Anlv2XwdpcqURzkYptXmiLgF3XZdgmTqaHowQEvwWF5xAFc.&fid=10080817c0fee819b9c79696a382f9634dbd87&v_f=2&v_p=62&from=1086395010&gsid=_2A252w25eDeRxGeVG7lAR-SbEwzuIHXVT2eaWrDV6PUJbkdAKLUXckWpNT7A9DU50PhpahnoX6h4MN6IDf091FFC2&lang=zh_CN&lfid=100803_-_recentvisit&skin=default&oldwm=9006_2001&sflag=1&cum=E0214B2C HTTP/1.1
 Host: api.weibo.cn
@@ -40,5 +40,5 @@ X-Log-Uid: 3852098887
 User-Agent: Che2-TL00_4.4.2_weibo_8.6.3_android
 Accept-Encoding: gzip, deflate
 
-
+ 
 

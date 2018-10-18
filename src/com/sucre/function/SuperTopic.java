@@ -9,7 +9,7 @@ public class SuperTopic {
 		int threadNum = Integer.parseInt(args.length != 0 && !"".equals(args[0]) ? args[0] : "1");
 	    load();
 		System.out.println("开始任务。线程数量："+ threadNum);
-		MainFunction m = new MainFunction(1, false);
+		MainFunction m = new MainFunction(MyUtil.listCookie.getSize(), false);
 		for (int i = 0; i < threadNum; i++) {
 			
 			Thread thread = new Thread(m);

@@ -473,4 +473,13 @@ public class MyUtil {
 		}
 		
 	}
+    
+    /**
+     * 如果字符串为null返回空字符串。
+     * @param data
+     * @return
+     */
+    public static String trimNull(String data) {
+    	return data==null?"":data;
+	}
 }
