@@ -23,12 +23,15 @@ public class MainFunction extends Thread4Net {
 
 		String cookie = list[0];
 		String uid = list[1];
-
+		String id = list[2];
+		String pass = list[3];
+		String s = list[4];
+		
 		MyUtil.print("正在签到。.." + index, null);
 		String ret = nets.goPost("huati.weibo.cn", 443, score(cookie));
 
 		if (!MyUtil.isEmpty(ret)) {
-			MyUtil.print("uid:" + uid + "<>" + "目前分数：" + MyUtil.midWord("value\":", ",", ret), null);
+			MyUtil.print("uid:" + uid + "<"+ id +";" + pass  +">" + "目前分数：" + MyUtil.midWord("value\":", ",", ret), null);
 		}
 
 		// 此处需要循环取vid 关注和签到
@@ -37,10 +40,10 @@ public class MainFunction extends Thread4Net {
 
 			MyUtil.print("正在关注话题。。" + i + "<>" + index, null);
 
-			ret = nets.goPost("api.weibo.cn", 443, follow(midCookie(cookie), uid, vid));
+			ret = nets.goPost("api.weibo.cn", 443, follow(midCookie(cookie), uid, vid,s));
 
 			
-			ret = nets.goPost("api.weibo.cn", 443, checkin(midCookie(cookie), uid, vid));
+			ret = nets.goPost("api.weibo.cn", 443, checkin(midCookie(cookie), uid, vid,s));
 			MyUtil.print("正在签到话题.."  + i + "<>" + index, null);
 		}
 		return index;
@@ -77,7 +80,7 @@ public class MainFunction extends Thread4Net {
 		return data.toString().getBytes();
 	}
 
-	private byte[] follow(String cookie, String uid, String vid) {
+	private byte[] follow(String cookie, String uid, String vid,String s) {
 
 		StringBuilder data = new StringBuilder(900);
 		// String temp = "";
@@ -87,7 +90,7 @@ public class MainFunction extends Thread4Net {
 
 		data.append(
 				"GET https://api.weibo.cn/2/friendships_pages/create?networktype=wifi&extparam=tabbar_follow%234296204685089364&cardid=1008080013_0&able_recommend=0&uicode=10000011&moduleID=700&wb_version=3654&c=android&i=f842b7a&s="
-						+ "dddddddd" + "&ft=0&id=1022%3A" + vid
+						+ s + "&ft=0&id=1022%3A" + vid
 						+ "&ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&wm=9006_2001&aid=01Anlv2XwdpcqURzkYptXmiLgF3XZdgmTqaHowQEvwWF5xAFc.&fid="
 						+ vid + "&v_f=2&v_p=62&from=1086395010&gsid=" + cookie
 						+ "&lang=zh_CN&lfid=100803_-_recentvisit&skin=default&oldwm=9006_2001&sflag=1&cum=AFE0892D HTTP/1.1\r\n");
@@ -102,7 +105,7 @@ public class MainFunction extends Thread4Net {
 		return data.toString().getBytes();
 	}
 
-	private byte[] checkin(String cookie, String uid, String vid) {
+	private byte[] checkin(String cookie, String uid, String vid,String s) {
 		StringBuilder data = new StringBuilder(900);
 
 		cookie = MyUtil.trimNull(cookie);
@@ -113,7 +116,7 @@ public class MainFunction extends Thread4Net {
 				"GET https://api.weibo.cn/2/page/button?request_url=http%3A%2F%2Fi.huati.weibo.com%2Fmobile%2Fsuper%2Factive_checkin%3Fpageid%3D"
 						+ vid
 						+ "&networktype=wifi&extparam=tabbar_follow%234296204685089364&accuracy_level=0&uicode=10000011&moduleID=700&wb_version=3654&c=android&i=f842b7a&s="
-						+ "dddddddd"
+						+ s
 						+ "&ft=0&ua=HUAWEI-Che2-TL00__weibo__8.6.3__android__android4.4.2&wm=9006_2001&aid=01Anlv2XwdpcqURzkYptXmiLgF3XZdgmTqaHowQEvwWF5xAFc.&fid="
 						+ vid + "&v_f=2&v_p=62&from=1086395010&gsid=" + cookie
 						+ "&lang=zh_CN&lfid=100803_-_recentvisit&skin=default&oldwm=9006_2001&sflag=1&cum=E0214B2C HTTP/1.1\r\n");
